@@ -1,0 +1,26 @@
+/* body styles*/
+
+body{
+    background-color: #46474c;
+
+    h1{
+        font-size: 70px;
+    }
+
+    a{
+        text-decoration: none;
+    }
+}
+
+header{
+    margin: 0;
+
+    p{
+        color: #46474c;
+
+        &:hover{
+            text-decoration: dotted;
+        }
+    }
+}
+
