@@ -1,15 +1,846 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="dist/css/main.min.css">
-    <title>GULP</title>
-</head>
-<body>
-    <img src="/src/assets/images/page-bg.jpg" alt="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <title>Wine & Food Store</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <nav class="nav">
+            <ul class="menu">
+              <li class="menu__list">
+                <a class="menu__link animation" href="#"> home </a>
+              </li>
+              <li class="menu__list">
+                <a class="menu__link animation" href="#"> wine </a>
+              </li>
+              <li class="menu__list">
+                <a class="menu__link animation" href="#"> food </a>
+              </li>
+            </ul>
+            <a class="logo" href="#">
+              <img src="images/logo.svg" alt="logo" width="300" height="88" />
+            </a>
+            <ul class="info">
+              <li class="info__item">
+                <a class="info__link animation" href="#">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#user"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="info__item">
+                <a class="info__link animation" href="#">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#fav"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="info__item">
+                <a class="info__link basket basket--on animation" href="#">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#bag"></use>
+                  </svg>
+                  <!--<span >1</span>-->
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="main">
+        <section class="top">
+          <div class="container">
+            <h1 class="title">Grape Wine Store in Moscow</h1>
+            <p class="subtitle">Get an Elite Strap free</p>
+            <p class="text">
+              For a limited time only, save $1089.99 USD. Offer ends 1/19/23
+            </p>
+            <button class="button">
+              <span class="button-text"> buy by</span>
+              <span class="button-price"> 888.99 USD. </span>
+            </button>
+          </div>
+        </section>
 
-    <script src="dist/js/main.min.js"></script>
-</body>
+        <section class="section">
+          <div class="container">
+            <h2 class="section-title">Our Wine Products</h2>
+            <ul class="catalog">
+              <li class="catalog__item">
+                <article class="catalog__box">
+                  <img
+                    class="catalog__img"
+                    src="images/wine/wine1.jpg"
+                    alt=""
+                  />
+                  <h3 class="catalog__name">Gorgonzola</h3>
+                  <span class="catalog__info"
+                    >info about this cheese some text blabla</span
+                  >
+                  <div class="catalog__button">
+                    <button class="button">
+                      <span class="button-text"> buy by</span>
+                      <span class="button-price"> 888.99 USD. </span>
+                    </button>
+                    <button class="catalog__button-fav">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#fav"></use>
+                      </svg>
+                    </button>
+                    <button class="catalog__button-cart">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#bag"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="catalog__box">
+                  <img
+                    class="catalog__img"
+                    src="images/wine/wine2.jpg"
+                    alt=""
+                  />
+                  <h3 class="catalog__name">Gorgonzola</h3>
+                  <span class="catalog__info"
+                    >info about this cheese some text blabla</span
+                  >
+                  <div class="catalog__button">
+                    <button class="button">
+                      <span class="button-text"> buy by</span>
+                      <span class="button-price"> 888.99 USD. </span>
+                    </button>
+                    <button class="catalog__button-fav">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#fav"></use>
+                      </svg>
+                    </button>
+                    <button class="catalog__button-cart">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#bag"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="catalog__box">
+                  <img
+                    class="catalog__img"
+                    src="images/wine/wine3.jpg"
+                    alt=""
+                  />
+                  <h3 class="catalog__name">Gorgonzola</h3>
+                  <span class="catalog__info"
+                    >info about this cheese some text blabla</span
+                  >
+                  <div class="catalog__button">
+                    <button class="button">
+                      <span class="button-text"> buy by</span>
+                      <span class="button-price"> 888.99 USD. </span>
+                    </button>
+                    <button class="catalog__button-fav">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#fav"></use>
+                      </svg>
+                    </button>
+                    <button class="catalog__button-cart">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#bag"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="catalog__box">
+                  <img
+                    class="catalog__img"
+                    src="images/wine/wine4.jpg"
+                    alt=""
+                  />
+                  <h3 class="catalog__name">Gorgonzola</h3>
+                  <span class="catalog__info"
+                    >info about this cheese some text blabla</span
+                  >
+                  <div class="catalog__button">
+                    <button class="button">
+                      <span class="button-text"> buy by</span>
+                      <span class="button-price"> 888.99 USD. </span>
+                    </button>
+                    <button class="catalog__button-fav">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#fav"></use>
+                      </svg>
+                    </button>
+                    <button class="catalog__button-cart">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#bag"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="catalog__box">
+                  <img
+                    class="catalog__img"
+                    src="images/wine/wine5.jpg"
+                    alt=""
+                  />
+                  <h3 class="catalog__name">Gorgonzola</h3>
+                  <span class="catalog__info"
+                    >info about this cheese some text blabla</span
+                  >
+                  <div class="catalog__button">
+                    <button class="button">
+                      <span class="button-text"> buy by</span>
+                      <span class="button-price"> 888.99 USD. </span>
+                    </button>
+                    <button class="catalog__button-fav">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#fav"></use>
+                      </svg>
+                    </button>
+                    <button class="catalog__button-cart">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#bag"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="catalog__box">
+                  <img
+                    class="catalog__img"
+                    src="images/wine/wine6.jpg"
+                    alt=""
+                  />
+                  <h3 class="catalog__name">Gorgonzola</h3>
+                  <span class="catalog__info"
+                    >info about this cheese some text blabla</span
+                  >
+                  <div class="catalog__button">
+                    <button class="button">
+                      <span class="button-text"> buy by</span>
+                      <span class="button-price"> 888.99 USD. </span>
+                    </button>
+                    <button class="catalog__button-fav">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#fav"></use>
+                      </svg>
+                    </button>
+                    <button class="catalog__button-cart">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#bag"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </article>
+              </li>
+            </ul>
+            <button class="catalog__button-all">see all</button>
+          </div>
+        </section>
+
+
+        <section
+          class="section quote"
+          style="background-image: url('images/bg-images/wine-bg.jpg')"
+        >
+      <div class="container">
+        <h3 class="quote__title">“Wine cheers the sad, revives the old, inspires the young, and makes weariness forget his toil.”
+          </h3>
+          <span class="quote__text">- Lord Byron</span>
+      </div>
+      </section>
+
+        <section class="section">
+          <div class="container">
+            <h2 class="section-title">Our Cheese Products</h2>
+
+            <!--    <ul class="cheese-menu">
+              <li class="cheese-menu__item">
+                <a class="cheese-menu__link" href="#">Roquefort</a>
+              </li>
+              <li class="cheese-menu__item">
+                <a class="cheese-menu__link" href="#">Parmesan</a>
+              </li>
+              <li class="cheese-menu__item">
+                <a class="cheese-menu__link" href="#">Cheddar</a>
+              </li>
+              <li class="cheese-menu__item">
+                <a class="cheese-menu__link" href="#">Brie</a>
+              </li>
+              <li class="cheese-menu__item">
+                <a class="cheese-menu__link" href="#">Gorgonzola</a>
+              </li>
+
+            </ul>-->
+
+            <ul class="catalog">
+              <li class="catalog__item">
+                <article class="catalog__box">
+                  <img
+                    class="catalog__img"
+                    src="images/cheese/cheese1.jpg"
+                    alt=""
+                  />
+                  <h3 class="catalog__name">Gorgonzola</h3>
+                  <span class="catalog__info"
+                    >info about this cheese some text blabla</span
+                  >
+                  <div class="catalog__button">
+                    <button class="button">
+                      <span class="button-text"> buy by</span>
+                      <span class="button-price"> 888.99 USD. </span>
+                    </button>
+                    <button class="catalog__button-fav">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#fav"></use>
+                      </svg>
+                    </button>
+                    <button class="catalog__button-cart">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#bag"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </article>
+              </li>
+
+              <li class="catalog__item">
+                <article class="catalog__box">
+                  <img
+                    class="catalog__img"
+                    src="images/cheese/cheese2.jpg"
+                    alt=""
+                  />
+                  <h3 class="catalog__name">Gorgonzola</h3>
+                  <span class="catalog__info"
+                    >info about this cheese some text blabla</span
+                  >
+                  <div class="catalog__button">
+                    <button class="button">
+                      <span class="button-text"> buy by</span>
+                      <span class="button-price"> 888.99 USD. </span>
+                    </button>
+                    <button class="catalog__button-fav">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#fav"></use>
+                      </svg>
+                    </button>
+                    <button class="catalog__button-cart">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#bag"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </article>
+              </li>
+
+              <li class="catalog__item">
+                <article class="catalog__box">
+                  <img
+                    class="catalog__img"
+                    src="images/cheese/cheese3.jpg"
+                    alt=""
+                  />
+                  <h3 class="catalog__name">Gorgonzola</h3>
+                  <span class="catalog__info"
+                    >info about this cheese some text blabla</span
+                  >
+                  <div class="catalog__button">
+                    <button class="button">
+                      <span class="button-text"> buy by</span>
+                      <span class="button-price"> 888.99 USD. </span>
+                    </button>
+                    <button class="catalog__button-fav">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#fav"></use>
+                      </svg>
+                    </button>
+                    <button class="catalog__button-cart">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#bag"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </article>
+              </li>
+
+              <li class="catalog__item">
+                <article class="catalog__box">
+                  <img
+                    class="catalog__img"
+                    src="images/cheese/cheese4.jpg"
+                    alt=""
+                  />
+                  <h3 class="catalog__name">Gorgonzola</h3>
+                  <span class="catalog__info"
+                    >info about this cheese some text blabla</span
+                  >
+                  <div class="catalog__button">
+                    <button class="button">
+                      <span class="button-text"> buy by</span>
+                      <span class="button-price"> 888.99 USD. </span>
+                    </button>
+                    <button class="catalog__button-fav">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#fav"></use>
+                      </svg>
+                    </button>
+                    <button class="catalog__button-cart">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#bag"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="catalog__box">
+                  <img
+                    class="catalog__img"
+                    src="images/cheese/cheese5.jpg"
+                    alt=""
+                  />
+                  <h3 class="catalog__name">Gorgonzola</h3>
+                  <span class="catalog__info"
+                    >info about this cheese some text blabla</span
+                  >
+                  <div class="catalog__button">
+                    <button class="button">
+                      <span class="button-text"> buy by</span>
+                      <span class="button-price"> 888.99 USD. </span>
+                    </button>
+                    <button class="catalog__button-fav">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#fav"></use>
+                      </svg>
+                    </button>
+                    <button class="catalog__button-cart">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#bag"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </article>
+              </li>
+
+              <li class="catalog__item">
+                <article class="catalog__box">
+                  <img
+                    class="catalog__img"
+                    src="images/cheese/cheese6.jpg"
+                    alt=""
+                  />
+                  <h3 class="catalog__name">Gorgonzola</h3>
+                  <span class="catalog__info"
+                    >info about this cheese some text blabla</span
+                  >
+                  <div class="catalog__button">
+                    <button class="button">
+                      <span class="button-text"> buy by</span>
+                      <span class="button-price"> 888.99 USD. </span>
+                    </button>
+                    <button class="catalog__button-fav">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#fav"></use>
+                      </svg>
+                    </button>
+                    <button class="catalog__button-cart">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#bag"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </article>
+              </li>
+            </ul>
+
+            <button class="catalog__button-all">see all</button>
+          </div>
+        </section>
+
+        <section
+        class="section quote"
+        style="background-image: url('images/bg-images/cheese-bg.jpg')"
+      >
+    <div class="container">
+      <h3 class="quote__title">“I just don’t see the point of not eating cheese. I mean, if God didn’t want us to eat cheese, would he have let man invent it?”
+       </h3>
+      <span class="quote__text"> – Lisa Samson</span>
+    </div></section>
+      
+        <section class="section">
+          <div class="container">
+            <h2 class="section-title">Wine Story</h2>
+
+            <div class="tabs">
+              <div class="tabs__button">
+                <button
+                  class="tabs__button-item tabs__button-item--active"
+                  data-button="content-1"
+                >
+                  Color
+                </button>
+                <button class="tabs__button-item" data-button="content-2">
+                  Country
+                </button>
+                <button class="tabs__button-item" data-button="content-3">
+                  Category by sugar
+                </button>
+
+                <button class="tabs__button-item" data-button="content-4">
+                  Price
+                </button>
+                <button class="tabs__button-item" data-button="content-5">
+                  Volume
+                </button>
+                <button class="tabs__button-item" data-button="content-6">
+                  Producers
+                </button>
+              </div>
+
+              <div class="tabs__content">
+                <div
+                  class="tabs__content-item tabs__content-item--active"
+                  id="content-1"
+                >
+                  <img
+                    class="tabs__content-img"
+                    src="images/tabs-img/color.jpg"
+                    alt=""
+                  />
+                  <div class="tabs__content-box">
+                    <h3 class="tabs__content-title">
+                      What Different Wine Colors Mean?
+                    </h3>
+                    <div class="tabs__content-text">
+                      <p>
+                        Ever wonder if a Chardonnay you’re about to buy is going
+                        to be rich or lean? Believe it or not, the answer is
+                        right in front of your eyes. The clues lie in a wine’s
+                        color. Many <span>“buttery”</span> Chardonnays are more
+                        extracted, which means they’re usually a rich gold
+                        color.
+                      </p>
+                      <p>
+                        A wine’s color can also help you if you’re interested in
+                        collecting wine. You can use wine color cues to
+                        determine its potential to cellar. For instance, a syrah
+                        that tinges blue on the rim has lower acidity. Acidity
+                        is one of the primary traits of
+                        <span>wines that age well</span> .
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tabs__content-item" id="content-2">
+                  <img
+                    class="tabs__content-img"
+                    src="images/tabs-img/country.jpg"
+                    alt=""
+                  />
+                  <div class="tabs__content-box">
+                    <h3 class="tabs__content-title">
+                      What country has the best wine in the world?
+                    </h3>
+                    <div class="tabs__content-text">
+                      <p>
+                        For many wine lovers, <span>France</span> is the world's
+                        greatest wine country. However, it's now in second place
+                        in two key categories. First, it has the world's
+                        second-largest total vineyard area, second to
+                        <span>Spain</span>. Second, it is also the
+                        second-largest wine producer: <span>Italy</span> takes
+                        the lead in the volume of wine produced.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs__content-item" id="content-3">
+                  <img
+                    class="tabs__content-img"
+                    src="images/tabs-img/category.jpg"
+                    alt=""
+                  />
+                  <div class="tabs__content-box">
+                    <h3 class="tabs__content-title">
+                      What types of sugars are in wine?
+                    </h3>
+                    <div class="tabs__content-text">
+                      <p>
+                        The sugar in wine is called <span>residual sugar</span>,
+                        or RS, and it doesn't from corn syrup or granulated
+                        sugar, but from the natural sugars found in wine grapes
+                        that include fructose and glucose. During winemaking,
+                        yeast typically converts all the sugar into alcohol
+                        making a dry wine.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs__content-item" id="content-4">
+                  <img
+                    class="tabs__content-img"
+                    src="images/tabs-img/variety.jpg"
+                    alt=""
+                  />
+                  <div class="tabs__content-box">
+                    <h3 class="tabs__content-title">Why wine is expensive?</h3>
+                    <div class="tabs__content-text">
+                      <p>
+                        The high cost of wines is holding back growth, and the
+                        cost is largely due to high taxes, both
+                        <span> import duties(160 per cent) </span> and the
+                        myriad state taxes and regulations that are applied to
+                        wines without considering that wine is a low-alcohol
+                        product which is farmer-friendly and good for health.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs__content-item" id="content-5">
+                  <img
+                    class="tabs__content-img"
+                    src="images/tabs-img/price.jpg"
+                    alt=""
+                  />
+                  <div class="tabs__content-box">
+                    <h3 class="tabs__content-title">
+                      How much is a volume of wine?
+                    </h3>
+                    <div class="tabs__content-text">
+                      <p>
+                        In the United States, one "standard" drink (or one
+                        alcoholic drink equivalent) contains roughly 14 grams of
+                        pure alcohol, which is found in: 12 ounces of regular
+                        beer, which is usually about <span>5% alcohol</span>. 5
+                        ounces of wine, which is typically about<span>
+                          12% alcohol</span
+                        >.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs__content-item" id="content-6">
+                  <img
+                    class="tabs__content-img"
+                    src="images/tabs-img/volume.jpg"
+                    alt=""
+                  />
+                  <div class="tabs__content-box">
+                    <h3 class="tabs__content-title">
+                      What are producers of wine called?
+                    </h3>
+                    <div class="tabs__content-text">
+                      <p>
+                        A winemaker or vintner is a person engaged in
+                        winemaking. They are
+                        <span
+                          >generally employed by wineries or wine
+                          companies</span
+                        >, where their work includes: Cooperating with
+                        viticulturists. Monitoring the maturity of grapes to
+                        ensure their quality and to determine the correct time
+                        for harvest.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section about">
+          <div class="container">
+            <h2 class="about__title">
+              Premium Wines & Spirits has its own capabilities
+            </h2>
+            <p class="about__text">
+              warehouse storage of goods. We independently choose, and deliver
+              wine to our customers.
+            </p>
+            <span class="about__info">We work only </span>
+          </div>
+        </section>
+
+        <section class="section blog">
+          <div class="container">
+            <h2 class="section-title">Latest blog & articlis</h2>
+
+            <ul class="blog__list">
+              <li class="blog__item">
+                <article class="blog__box">
+                  <img
+                    class="blog__box-img"
+                    src="images/blog-img/blog1.jpg"
+                    alt=""
+                    height="300"
+                  />
+                  <div class="blog__box-content">
+                    <h3 class="blog__box-title">
+                      Explore the wine color chart and understand what aspects
+                      of wine affect its color.
+                    </h3>
+                    <span class="blog__box-data">12 march 2022</span>
+                    <p class="blog__box-text">
+                      A wine’s color can also help you if you’re interested in
+                      collecting wine. You can use wine color cues to determine
+                      its potential to cellar.
+                    </p>
+                    <a class="blog__box-link" href="#">read more</a>
+                  </div>
+                </article>
+              </li>
+              <li class="blog__item">
+                <article class="blog__box">
+                  <img
+                    class="blog__box-img"
+                    src="images/blog-img/blog2.jpg"
+                    alt=""
+                    height="300"
+                  />
+                  <div class="blog__box-content">
+                    <h3 class="blog__box-title">
+                      Explore the wine color chart and understand what aspects
+                      of wine affect its color.
+                    </h3>
+                    <span class="blog__box-data">12 march 2022</span>
+                    <p class="blog__box-text">
+                      A wine’s color can also help you if you’re interested in
+                      collecting wine. You can use wine color cues to determine
+                      its potential to cellar.
+                    </p>
+                    <a class="blog__box-link" href="#">read more</a>
+                  </div>
+                </article>
+              </li>
+              <li class="blog__item">
+                <article class="blog__box">
+                  <img
+                    class="blog__box-img"
+                    src="images/blog-img/blog3.jpg"
+                    alt=""
+                    height="300"
+                  />
+                  <div class="blog__box-content">
+                    <h3 class="blog__box-title">
+                      Explore the wine color chart and understand what aspects
+                      of wine affect its color.
+                    </h3>
+                    <span class="blog__box-data">12 march 2022</span>
+                    <p class="blog__box-text">
+                      A wine’s color can also help you if you’re interested in
+                      collecting wine. You can use wine color cues to determine
+                      its potential to cellar.
+                    </p>
+                    <a class="blog__box-link" href="#">read more</a>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section"></section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <ul class="footer__inner">
+            <li class="footer__item">
+              <article class="company">
+                <h4 class="footer-title">Company</h4>
+                <ul class="footer__list">
+                  <li class="company__item">
+                    <a class="company__link" href="#">Shop</a>
+                  </li>
+                  <li class="company__item">
+                    <a class="company__link" href="#">Wine Data</a>
+                  </li>
+                  <li class="company__item">
+                    <a class="company__link" href="#">About Us </a>
+                  </li>
+                  <li class="company__item">
+                    <a class="company__link" href="#">Jobs </a>
+                  </li>
+                  <li class="company__item">
+                    <a class="company__link" href="#">Contact </a>
+                  </li>
+                </ul>
+              </article>
+            </li>
+            <li class="footer__item">
+              <article class="social">
+                <h4 class="footer-title">Social Media</h4>
+                <ul class="footer__list">
+                  <li class="social__item">
+                    <a class="social__link" href="#">Instagram</a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link" href="#">Youtube</a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link" href="#">Twitter</a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link" href="#">Facebook</a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link" href="#">LinkedIn</a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link" href="#">Pinterest </a>
+                  </li>
+                </ul>
+              </article>
+            </li>
+
+            <li class="footer__item">
+              <article class="region">
+                <h4 class="footer-title">Region Guides</h4>
+                <ul class="footer__list">
+                  <li class="region__item">
+                    <a class="region__link" href="#">Napa Valley</a>
+                  </li>
+                  <li class="region__item">
+                    <a class="region__link" href="#">Argentina</a>
+                  </li>
+                  <li class="region__item">
+                    <a class="region__link" href="#">Walla Walla</a>
+                  </li>
+                  <li class="region__item">
+                    <a class="region__link" href="#">Sicily</a>
+                  </li>
+                  <li class="region__item">
+                    <a class="region__link" href="#">Margaret River</a>
+                  </li>
+                  <li class="region__item">
+                    <a class="region__link" href="#">Valdobbiadene</a>
+                  </li>
+                  <li class="region__item">
+                    <a class="region__link" href="#">Paso Robles</a>
+                  </li>
+                </ul>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/main.min.js"></script>
+  </body>
 </html>
