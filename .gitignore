@@ -1,3 +1,11 @@
 /node_modules
 /dist
-package-lock.json
+/packages
+/bin
+/out 
+/target
+.lock
+.idea/workspace.xml
+/.bundle
+/vendor/bundle
+/package-lock.json

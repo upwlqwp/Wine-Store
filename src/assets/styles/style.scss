@@ -1,10 +1,9 @@
 @import "reset";
 @import "global";
 @import "fonts";
+@import "mixins";
+@import "media";
 
-.header {
-  border-bottom: 1px solid #780000;
-}
 
 .nav {
   display: grid;
@@ -61,17 +60,19 @@
 }
 
 .top {
+ 
   height: calc(100vh - 90px);
   background-image: url("../images/bg-images/header-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  position: relative;
   z-index: 33;
+  position: relative;
+
 
   &::after {
     content: "";
-    background-color: #100f0f81;
     position: absolute;
+    background-color: #100f0f81;
     right: 0;
     left: 0;
     top: 0;
@@ -81,6 +82,7 @@
 }
 
 .title {
+  font-family: 'BebasNeue';
   padding-top: 200px;
   margin-bottom: 30px;
   font-size: 48px;
@@ -113,6 +115,12 @@
   &-text {
     display: block;
     padding: 13px 20px;
+    transition: color 0.6s,  background-color 0.6s;
+
+    &:hover{
+      color: #780000;
+      background-color: #fffffc;
+    }
   }
 
   &-price {
@@ -121,8 +129,17 @@
     padding: 13px 20px;
     display: block;
     background-color: #fffffc;
+    transition: color 0.6s,  background-color 0.6s;
+
+    &:hover{
+      color: #fffffc;
+      background-color: #780000;
+    }
   }
 }
+
+//----
+
 
 .tabs {
   display: grid;
@@ -188,11 +205,12 @@
     gap: 30px;
   }
 
-  &__box-content {
+   &__box-content {
     display: grid;
     gap: 20px;
     padding: 0 20px;
   }
+ 
   &__box-img {
     display: block;
     margin-bottom: 20px;
@@ -243,15 +261,17 @@
   background-size: cover;
 
   &__title {
-    font-size: 38px;
-    font-weight: 600;
-    line-height: 32px;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'BebasNeue';
+    text-transform: uppercase;
+    line-height: 40px;
     letter-spacing: 2px;
     margin-bottom: 30px;
     background: linear-gradient(
       180deg,
-      rgb(144, 21, 21) 56%,
-      rgb(189, 2, 36) 97% 100%
+      rgb(197, 3, 3) 56%,
+      rgb(89, 5, 5) 97% 100%
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -259,7 +279,7 @@
   }
 
   &__text {
-    font-size: 18px;
+    font-size: 24px;
     margin-bottom: 29px;
   }
 }
@@ -285,6 +305,7 @@
   }
 
   &__title {
+    font-family: "MerriweatherSans";
     font-style: italic;
     letter-spacing: 1.8px;
     font-size: 34px;
@@ -304,10 +325,19 @@
   gap: 30px;
   margin-bottom: 50px;
 
-  &__item {
-    max-height: 500px;
-    position: relative;
+  &__item{
+    max-width: 500px;
   }
+
+ &__box{
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 18px;
+  height: 100%;
+  max-width: 500px;
+  border: 1px solid rgba(17, 17, 17, 0.2);
+
+ }
 
   &__name {
     text-transform: uppercase;
@@ -317,13 +347,13 @@
   }
 
   &__img {
-    height: 300px;
     width: 100%;
   }
   &__info {
     display: block;
     font-size: 16px;
     margin-bottom: 13px;
+    @include line-clamp(2);
   }
 
   &__button {
@@ -335,7 +365,7 @@
     border-radius: 3px;
     font-size: 20px;
     font-weight: 500;
-    padding: 10px 40px;
+    padding: 10px 20px;
     color: #780000;
     background-color: #fffffc;
     display: block;
@@ -385,6 +415,15 @@ svg{
     text-transform: uppercase;
     padding: 8px 35px;
     background-color: #780000;
+    transition: color 0.6s,  background-color 0.6s;
+
+  
+
+    &:hover{
+      color: #780000;
+      background-color: #fffefe;
+    }
+
   }
 }
 
@@ -413,3 +452,16 @@ svg{
     flex-direction: column;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+@import "media";

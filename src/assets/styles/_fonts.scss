@@ -1,13 +1,64 @@
 @font-face {
-    font-family: 'Helvetica', sans-serif;
-    src: url('../fonts/helvetica.woff2');
-    font-style: normal;
-    font-weight: 400;
+  font-family: "BebasNeue";
+  font-style: normal;
+  font-weight: 400;
+  src: 
+  url("../fonts/BebasNeue-Regular.woff2") format("woff2"),
+  url("../fonts/BebasNeue-Regular.woff") format("woff");
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Helvetica-bold', sans-serif;
-    src: url('../fonts/helvetica-bold.woff2');
+    font-family: "MerriweatherSans";
+    font-style: normal;
+    font-weight: 300;
+    src: 
+    url("../fonts/MerriweatherSans-Light.woff2") format("woff2"),
+    url("../fonts/MerriweatherSans-Light.woff") format("woff");
+    font-display: swap;
+  }
+
+@font-face {
+    font-family: "MerriweatherSans";
+    font-style: normal;
+    font-weight: 400;
+    src: 
+    url("../fonts/MerriweatherSans-Regular.woff2") format("woff2"),
+    url("../fonts/MerriweatherSans-Regular.woff") format("woff");
+    font-display: swap;
+  }
+
+
+
+  @font-face {
+    font-family: "MerriweatherSans";
+    font-style: normal;
+    font-weight: 500;
+    src: 
+    url("../fonts/MerriweatherSans-Medium.woff2") format("woff2"),
+    url("../fonts/MerriweatherSans-Medium.woff") format("woff");
+    font-display: swap;
+  }
+
+
+@font-face {
+    font-family: "MerriweatherSans";
     font-style: normal;
     font-weight: 700;
-}
+    src: 
+    url("../fonts/MerriweatherSans-Bold.woff2") format("woff2"),
+    url("../fonts/MerriweatherSans-Bold.woff") format("woff");
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "MerriweatherSans";
+    font-style: italic;
+    font-weight: 700;
+    src: 
+    url("../fonts/MerriweatherSans-Bolditalic.woff2") format("woff2"),
+    url("../fonts/MerriweatherSans-Bolditalic.woff") format("woff");
+    font-display: swap;
+  }
+
+  
