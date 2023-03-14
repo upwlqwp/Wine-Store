@@ -1,0 +1,108 @@
+.invitation {
+    display: flex;
+    justify-content: space-between;
+  
+    &__info-title {
+      max-width: 600px;
+      color: #780000;
+      font-family: "BebasNeue";
+      text-transform: uppercase;
+      font-size: 44px;
+      letter-spacing: 4px;
+      margin-bottom: 40px;
+    }
+  
+    &__info-text {
+      max-width: 600px;
+      font-size: 26px;
+      margin-bottom: 30px;
+      font-family: "BebasNeue";
+    }
+  
+    &__info-data {
+      display: block;
+    }
+  
+    &__form {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    &__subtitle {
+      color: #780000;
+      max-width: 460px;
+      font-family: "BebasNeue";
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+  
+    label {
+      margin-bottom: 30px;
+    }
+  
+    input {
+      width: 100%;
+      padding: 10px;
+      color: #fffefe;
+      background-color: transparent;
+      border-bottom: 2px solid #780000;
+  
+      &::placeholder {
+        text-transform: uppercase;
+        color: #fffefe;
+      }
+    }
+  
+    button {
+      width: fit-content;
+      text-transform: uppercase;
+      padding: 10px 20px;
+      border: 2px solid #780000;
+      margin: 0 auto;
+      border-radius: 3px;
+      background-color: #780000;
+    }
+  
+    .agree {
+      display: flex;
+  
+      &__input {
+        width: 20px;
+        margin-right: 20px;
+      }
+    }
+  }
+  
+  .topics{
+  
+    &__item{
+      margin-bottom: 50px;
+    }
+  
+    &__item-inner{
+      display: flex;
+      justify-content: space-between;
+    }
+   
+  
+    &__item-title{
+      font-size: 38px;
+      margin-bottom: 30px;
+      line-height: 1.8;
+      letter-spacing: 2px;
+      font-family: "BebasNeue";
+      text-transform: uppercase;
+      max-width: 600px;
+      color: #780000;
+    }
+  
+    &__item-text p{
+      font-size: 24px;
+     margin: 15px  30px;
+      max-width: 700px;
+      letter-spacing: 1px;
+      font-weight: 300;
+    }
+  
+   
+  }

@@ -4,11 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-
-
-    <meta http-equiv="refresh" content="0;url=https://upwlqwp.github.io/Wine-Store/dist/index.html" />
-
 
     <link rel="stylesheet" href="css/main.min.css" />
     <title>Wine & Food Store</title>
@@ -20,13 +15,15 @@
           <nav class="nav">
             <ul class="menu">
               <li class="menu__list">
-                <a class="menu__link animation" href="#"> Home </a>
+                <a class="menu__link animation" href="index.html"> About us </a>
               </li>
               <li class="menu__list">
-                <a class="menu__link animation" href="#"> Ctalog</a>
+                <a class="menu__link animation" href="catalog-page.html">
+                  Ctalog</a
+                >
               </li>
               <li class="menu__list">
-                <a class="menu__link animation" href="#"> Blog </a>
+                <a class="menu__link animation" href="blog-page.html"> Blog </a>
               </li>
             </ul>
             <a class="logo" href="#">
@@ -59,6 +56,7 @@
           </nav>
         </div>
       </header>
+
       <main class="main">
         <section class="top">
           <div class="container">
@@ -77,201 +75,240 @@
         <section class="section">
           <div class="container">
             <h2 class="section-title">Our Wine Products</h2>
+
             <ul class="catalog">
               <li class="catalog__item">
                 <article class="catalog__box">
-                  <img
-                    class="catalog__img"
-                    src="images/wine/wine1.jpg"
-                    alt="Casillero del Diablo"
-                    width="219"
-                    height="218"
-                  />
-                  <h3 class="catalog__name">Casillero del Diablo</h3>
+                  <a class="catalog__link" href="#">
+                    <img
+                      class="catalog__img"
+                      src="images/wine/wine1.jpg"
+                      alt="Casillero del Diablo"
+                      width="300"
+                      height="300"
+                    />
+                  </a>
+                  <h3 class="catalog__subtitle">Casillero del Diablo</h3>
                   <span class="catalog__info"
                     >Carmenere Reserva red dry, 0.75 l is an alcoholic drink of
-                    burgundy color, sparkling in the light.</span
+                    burgundy color, sparkling in the light .</span
                   >
-                  <div class="catalog__button">
-                    <button class="button">
-                      <span class="button-text"> buy by</span>
-                      <span class="button-price"> 188.99 USD. </span>
-                    </button>
-                    <button class="catalog__button-fav">
-                      <svg>
-                        <use xlink:href="images/sprite.svg#fav"></use>
-                      </svg>
-                    </button>
-                    <button class="catalog__button-cart">
-                      <svg>
-                        <use xlink:href="images/sprite.svg#bag"></use>
-                      </svg>
-                    </button>
+                  <div class="catalog__wrapper">
+                    <span class="catalog__button-price">
+                      188.99 <span>&#36;</span></span
+                    >
+
+                    <div class="catalog__buttons">
+                      <button class="catalog__button-fav" type="button">
+                        <span class="sr-only">Add to favourites </span>
+                        <svg>
+                          <use xlink:href="images/sprite.svg#fav"></use>
+                        </svg>
+                      </button>
+                      <button class="catalog__button-cart" type="button">
+                        <span class="sr-only"> Add to cart</span>
+                        <svg>
+                          <use xlink:href="images/sprite.svg#bag"></use>
+                        </svg>
+                      </button>
+                    </div>
                   </div>
                 </article>
               </li>
               <li class="catalog__item">
                 <article class="catalog__box">
-                  <img
-                    class="catalog__img"
-                    src="images/wine/wine2.jpg"
-                    alt="Campo Viejo"
-                    width="219"
-                    height="218"
-                  />
-                  <h3 class="catalog__name">Campo Viejo</h3>
-                  <span class="catalog__info">
-                    Wine: Red, dry Region: Spain, Rioja Producer: Pernod Ricard
+                  <a class="catalog__link" href="#">
+                    <img
+                      class="catalog__img"
+                      src="images/wine/wine2.jpg"
+                      alt="Campo Viejo"
+                      width="300"
+                      height="300"
+                    />
+                  </a>
+                  <h3 class="catalog__subtitle">Campo Viejo</h3>
+                  <span class="catalog__info"
+                    >Wine: Red, dry Region: Spain, Rioja Producer: Pernod Ricard
                     Brand: Campo Viejo Fortress. 13.5%.</span
                   >
-                  <div class="catalog__button">
-                    <button class="button">
-                      <span class="button-text"> buy by</span>
-                      <span class="button-price"> 168.99 USD. </span>
-                    </button>
-                    <button class="catalog__button-fav">
-                      <svg>
-                        <use xlink:href="images/sprite.svg#fav"></use>
-                      </svg>
-                    </button>
-                    <button class="catalog__button-cart">
-                      <svg>
-                        <use xlink:href="images/sprite.svg#bag"></use>
-                      </svg>
-                    </button>
+                  <div class="catalog__wrapper">
+                    <span class="catalog__button-price">
+                      149.00 <span>&#36;</span></span
+                    >
+
+                    <div class="catalog__buttons">
+                      <button class="catalog__button-fav" type="button">
+                        <span class="sr-only">Add to favourites </span>
+                        <svg>
+                          <use xlink:href="images/sprite.svg#fav"></use>
+                        </svg>
+                      </button>
+                      <button class="catalog__button-cart" type="button">
+                        <span class="sr-only"> Add to cart</span>
+                        <svg>
+                          <use xlink:href="images/sprite.svg#bag"></use>
+                        </svg>
+                      </button>
+                    </div>
                   </div>
                 </article>
               </li>
               <li class="catalog__item">
                 <article class="catalog__box">
-                  <img
-                    class="catalog__img"
-                    src="images/wine/wine3.jpg"
-                    alt="Pinot Grigio"
-                    width="219"
-                    height="218"
-                  />
-                  <h3 class="catalog__name">Pinot Grigio</h3>
+                  <a class="catalog__link" href="#">
+                    <img
+                      class="catalog__img"
+                      src="images/wine/wine3.jpg"
+                      alt="Pinot Grigio"
+                      width="300"
+                      height="300"
+                    />
+                  </a>
+                  <h3 class="catalog__subtitle">Pinot Grigio</h3>
                   <span class="catalog__info"
                     >Wine Giannitessari, Pinot Grigio delle Venezie DOC, 2021
                     Giannitessari, Pinot Grigio, 2021, 750 ml.</span
                   >
-                  <div class="catalog__button">
-                    <button class="button">
-                      <span class="button-text"> buy by</span>
-                      <span class="button-price"> 388.99 USD. </span>
-                    </button>
-                    <button class="catalog__button-fav">
-                      <svg>
-                        <use xlink:href="images/sprite.svg#fav"></use>
-                      </svg>
-                    </button>
-                    <button class="catalog__button-cart">
-                      <svg>
-                        <use xlink:href="images/sprite.svg#bag"></use>
-                      </svg>
-                    </button>
+                  <div class="catalog__wrapper">
+                    <span class="catalog__button-price">
+                      388.99 <span>&#36;</span></span
+                    >
+
+                    <div class="catalog__buttons">
+                      <button class="catalog__button-fav" type="button">
+                        <span class="sr-only">Add to favourites </span>
+                        <svg>
+                          <use xlink:href="images/sprite.svg#fav"></use>
+                        </svg>
+                      </button>
+                      <button class="catalog__button-cart" type="button">
+                        <span class="sr-only"> Add to cart</span>
+                        <svg>
+                          <use xlink:href="images/sprite.svg#bag"></use>
+                        </svg>
+                      </button>
+                    </div>
                   </div>
                 </article>
               </li>
               <li class="catalog__item">
                 <article class="catalog__box">
-                  <img
-                    class="catalog__img"
-                    src="images/wine/wine4.jpg"
-                    alt="Cotes Du Rhone"
-                    width="219"
-                    height="218"
-                  />
-                  <h3 class="catalog__name">Cotes Du Rhone</h3>
-                  <span class="catalog__info">
+                  <a class="catalog__link" href="#">
+                    <img
+                      class="catalog__img"
+                      src="images/wine/wine4.jpg"
+                      alt="Cotes Du Rhone"
+                      width="300"
+                      height="300"
+                    />
+                  </a>
+                  <h3 class="catalog__subtitle">Cotes Du Rhone</h3>
+                  <span class="catalog__info"> </span>
+                  <span>
                     Bernard Magrez Le Prelat Rouge Cotes du Rhone Village 2016
-                    0,75 л red, dry, 14%·
-                  </span>
-                  <div class="catalog__button">
-                    <button class="button">
-                      <span class="button-text"> buy by</span>
-                      <span class="button-price"> 588.99 USD. </span>
-                    </button>
-                    <button class="catalog__button-fav">
-                      <svg>
-                        <use xlink:href="images/sprite.svg#fav"></use>
-                      </svg>
-                    </button>
-                    <button class="catalog__button-cart">
-                      <svg>
-                        <use xlink:href="images/sprite.svg#bag"></use>
-                      </svg>
-                    </button>
+                    0,75 л red, dry, 14%·</span
+                  >
+                  <div class="catalog__wrapper">
+                    <span class="catalog__button-price">
+                      588.99 <span>&#36;</span></span
+                    >
+
+                    <div class="catalog__buttons">
+                      <button class="catalog__button-fav" type="button">
+                        <span class="sr-only">Add to favourites </span>
+                        <svg>
+                          <use xlink:href="images/sprite.svg#fav"></use>
+                        </svg>
+                      </button>
+                      <button class="catalog__button-cart" type="button">
+                        <span class="sr-only"> Add to cart</span>
+                        <svg>
+                          <use xlink:href="images/sprite.svg#bag"></use>
+                        </svg>
+                      </button>
+                    </div>
                   </div>
                 </article>
               </li>
               <li class="catalog__item">
                 <article class="catalog__box">
-                  <img
-                    class="catalog__img"
-                    src="images/wine/wine5.jpg"
-                    alt="Silver Frond"
-                    width="219"
-                    height="218"
-                  />
-                  <h3 class="catalog__name">Silver Frond</h3>
+                  <a class="catalog__link" href="#">
+                    <img
+                      class="catalog__img"
+                      src="images/wine/wine5.jpg"
+                      alt="Silver Frond"
+                      width="300"
+                      height="300"
+                    />
+                  </a>
+                  <h3 class="catalog__subtitle">Silver Frond</h3>
                   <span class="catalog__info"
                     >From Marlborough, South Island, New Zealand. This wine has
-                    125 mentions of citrus notes (citrus, lime, lemon).
-                  </span>
-                  <div class="catalog__button">
-                    <button class="button">
-                      <span class="button-text"> buy by</span>
-                      <span class="button-price"> 688.99 USD. </span>
-                    </button>
-                    <button class="catalog__button-fav">
-                      <svg>
-                        <use xlink:href="images/sprite.svg#fav"></use>
-                      </svg>
-                    </button>
-                    <button class="catalog__button-cart">
-                      <svg>
-                        <use xlink:href="images/sprite.svg#bag"></use>
-                      </svg>
-                    </button>
+                    125 mentions of citrus notes (citrus, lime, lemon).</span
+                  >
+                  <div class="catalog__wrapper">
+                    <span class="catalog__button-price">
+                      688.99 <span>&#36;</span></span
+                    >
+
+                    <div class="catalog__buttons">
+                      <button class="catalog__button-fav" type="button">
+                        <span class="sr-only">Add to favourites </span>
+                        <svg>
+                          <use xlink:href="images/sprite.svg#fav"></use>
+                        </svg>
+                      </button>
+                      <button class="catalog__button-cart" type="button">
+                        <span class="sr-only"> Add to cart</span>
+                        <svg>
+                          <use xlink:href="images/sprite.svg#bag"></use>
+                        </svg>
+                      </button>
+                    </div>
                   </div>
                 </article>
               </li>
               <li class="catalog__item">
                 <article class="catalog__box">
-                  <img
-                    class="catalog__img"
-                    src="images/wine/wine6.jpg"
-                    alt="Pinot Grigio Trentino"
-                    width="219"
-                    height="218"
-                  />
-                  <h3 class="catalog__name">Pinot Grigio Trentino</h3>
+                  <a class="catalog__link" href="#">
+                    <img
+                      class="catalog__img"
+                      src="images/wine/wine6.jpg"
+                      alt="Pinot Grigio Trentino"
+                      width="300"
+                      height="300"
+                    />
+                  </a>
+                  <h3 class="catalog__subtitle">Pinot Grigio Trentino</h3>
                   <span class="catalog__info"
                     >Mezzacorona 0.75 l Color. white · Type of wine. quiet ·
                     Sugar. dry · Region. Trentino Alto Adige ·</span
                   >
-                  <div class="catalog__button">
-                    <button class="button">
-                      <span class="button-text"> buy by</span>
-                      <span class="button-price"> 118.99 USD. </span>
-                    </button>
-                    <button class="catalog__button-fav">
-                      <svg>
-                        <use xlink:href="images/sprite.svg#fav"></use>
-                      </svg>
-                    </button>
-                    <button class="catalog__button-cart">
-                      <svg>
-                        <use xlink:href="images/sprite.svg#bag"></use>
-                      </svg>
-                    </button>
+                  <div class="catalog__wrapper">
+                    <span class="catalog__button-price">
+                      118.99<span>&#36;</span></span
+                    >
+
+                    <div class="catalog__buttons">
+                      <button class="catalog__button-fav" type="button">
+                        <span class="sr-only">Add to favourites </span>
+                        <svg>
+                          <use xlink:href="images/sprite.svg#fav"></use>
+                        </svg>
+                      </button>
+                      <button class="catalog__button-cart" type="button">
+                        <span class="sr-only"> Add to cart</span>
+                        <svg>
+                          <use xlink:href="images/sprite.svg#bag"></use>
+                        </svg>
+                      </button>
+                    </div>
                   </div>
                 </article>
               </li>
             </ul>
-            <button class="catalog__button-all">see all</button>
+
+            <button class="catalog__button-all button-animation">see all</button>
           </div>
         </section>
 
@@ -295,200 +332,235 @@
             <ul class="catalog">
               <li class="catalog__item">
                 <article class="catalog__box">
-                  <img
-                    class="catalog__img"
-                    src="images/cheese/cheese1.jpg"
-                    alt="Limburger cheese"
-                    width="219"
-                    height="218"
-                  />
-                  <h3 class="catalog__name">Limburger cheese</h3>
-                  <span class="catalog__info">
-                    Originated during the 19th century in the historical</span
+                  <a class="catalog__link" href="#">
+                    <img
+                      class="catalog__img"
+                      src="images/cheese/cheese1.jpg"
+                      alt="Limburger cheese"
+                      width="300"
+                      height="300"
+                    />
+                  </a>
+                  <h3 class="catalog__subtitle">Limburger cheese</h3>
+                  <span class="catalog__info"
+                    >Originated during the 19th century in the historical</span
                   >
-                  <div class="catalog__button">
-                    <button class="button">
-                      <span class="button-text"> buy by</span>
-                      <span class="button-price"> 88.99 USD. </span>
-                    </button>
-                    <button class="catalog__button-fav">
-                      <svg>
-                        <use xlink:href="images/sprite.svg#fav"></use>
-                      </svg>
-                    </button>
-                    <button class="catalog__button-cart">
-                      <svg>
-                        <use xlink:href="images/sprite.svg#bag"></use>
-                      </svg>
-                    </button>
+                  <div class="catalog__wrapper">
+                    <span class="catalog__button-price">
+                      88.99 <span>&#36;</span></span
+                    >
+
+                    <div class="catalog__buttons">
+                      <button class="catalog__button-fav" type="button">
+                        <span class="sr-only">Add to favourites </span>
+                        <svg>
+                          <use xlink:href="images/sprite.svg#fav"></use>
+                        </svg>
+                      </button>
+                      <button class="catalog__button-cart" type="button">
+                        <span class="sr-only"> Add to cart</span>
+                        <svg>
+                          <use xlink:href="images/sprite.svg#bag"></use>
+                        </svg>
+                      </button>
+                    </div>
                   </div>
                 </article>
               </li>
 
               <li class="catalog__item">
                 <article class="catalog__box">
-                  <img
-                    class="catalog__img"
-                    src="images/cheese/cheese2.jpg"
-                    alt="Remoudou"
-                    width="219"
-                    height="218"
-                  />
-                  <h3 class="catalog__name">Remoudou</h3>
+                  <a class="catalog__link" href="#">
+                    <img
+                      class="catalog__img"
+                      src="images/cheese/cheese2.jpg"
+                      alt="Remoudou"
+                      width="300"
+                      height="300"
+                    />
+                  </a>
+                  <h3 class="catalog__subtitle">Remoudou</h3>
                   <span class="catalog__info"
                     >It derives its name from the use of milk removed 15 minutes
                     after</span
                   >
-                  <div class="catalog__button">
-                    <button class="button">
-                      <span class="button-text"> buy by</span>
-                      <span class="button-price"> 38.99 USD. </span>
-                    </button>
-                    <button class="catalog__button-fav">
-                      <svg>
-                        <use xlink:href="images/sprite.svg#fav"></use>
-                      </svg>
-                    </button>
-                    <button class="catalog__button-cart">
-                      <svg>
-                        <use xlink:href="images/sprite.svg#bag"></use>
-                      </svg>
-                    </button>
+                  <div class="catalog__wrapper">
+                    <span class="catalog__button-price">
+                      38.99 <span>&#36;</span></span
+                    >
+
+                    <div class="catalog__buttons">
+                      <button class="catalog__button-fav" type="button">
+                        <span class="sr-only">Add to favourites </span>
+                        <svg>
+                          <use xlink:href="images/sprite.svg#fav"></use>
+                        </svg>
+                      </button>
+                      <button class="catalog__button-cart" type="button">
+                        <span class="sr-only"> Add to cart</span>
+                        <svg>
+                          <use xlink:href="images/sprite.svg#bag"></use>
+                        </svg>
+                      </button>
+                    </div>
                   </div>
                 </article>
               </li>
-
               <li class="catalog__item">
                 <article class="catalog__box">
-                  <img
-                    class="catalog__img"
-                    src="images/cheese/cheese3.jpg"
-                    alt="Sirene"
-                    width="219"
-                    height="218"
-                  />
-                  <h3 class="catalog__name">Sirene</h3>
+                  <a class="catalog__link" href="#">
+                    <img
+                      class="catalog__img"
+                      src="images/cheese/cheese3.jpg"
+                      alt="Sirene"
+                      width="300"
+                      height="300"
+                    />
+                  </a>
+                  <h3 class="catalog__subtitle">Sirene</h3>
                   <span class="catalog__info"
                     >A type of brine cheese made in South-Eastern Europe</span
                   >
-                  <div class="catalog__button">
-                    <button class="button">
-                      <span class="button-text"> buy by</span>
-                      <span class="button-price"> 98.99 USD. </span>
-                    </button>
-                    <button class="catalog__button-fav">
-                      <svg>
-                        <use xlink:href="images/sprite.svg#fav"></use>
-                      </svg>
-                    </button>
-                    <button class="catalog__button-cart">
-                      <svg>
-                        <use xlink:href="images/sprite.svg#bag"></use>
-                      </svg>
-                    </button>
+                  <div class="catalog__wrapper">
+                    <span class="catalog__button-price">
+                      78.99 <span>&#36;</span></span
+                    >
+
+                    <div class="catalog__buttons">
+                      <button class="catalog__button-fav" type="button">
+                        <span class="sr-only">Add to favourites </span>
+                        <svg>
+                          <use xlink:href="images/sprite.svg#fav"></use>
+                        </svg>
+                      </button>
+                      <button class="catalog__button-cart" type="button">
+                        <span class="sr-only"> Add to cart</span>
+                        <svg>
+                          <use xlink:href="images/sprite.svg#bag"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="catalog__box">
+                  <a class="catalog__link" href="#">
+                    <img
+                      class="catalog__img"
+                      src="images/cheese/cheese4.jpg"
+                      alt="Danablu"
+                      width="300"
+                      height="300"
+                    />
+                  </a>
+                  <h3 class="catalog__subtitle">Danablu</h3>
+                  <span class="catalog__info"
+                    >Danablu (Danish Blue) is a strong, blue-veined
+                    cheese.</span
+                  >
+                  <div class="catalog__wrapper">
+                    <span class="catalog__button-price">
+                      68.99 <span>&#36;</span></span
+                    >
+
+                    <div class="catalog__buttons">
+                      <button class="catalog__button-fav" type="button">
+                        <span class="sr-only">Add to favourites </span>
+                        <svg>
+                          <use xlink:href="images/sprite.svg#fav"></use>
+                        </svg>
+                      </button>
+                      <button class="catalog__button-cart" type="button">
+                        <span class="sr-only"> Add to cart</span>
+                        <svg>
+                          <use xlink:href="images/sprite.svg#bag"></use>
+                        </svg>
+                      </button>
+                    </div>
                   </div>
                 </article>
               </li>
 
               <li class="catalog__item">
                 <article class="catalog__box">
-                  <img
-                    class="catalog__img"
-                    src="images/cheese/cheese4.jpg"
-                    alt="Danablu"
-                    width="219"
-                    height="218"
-                  />
-                  <h3 class="catalog__name">Danablu</h3>
-                  <span class="catalog__info">
-                    Danablu (Danish Blue) is a strong, blue-veined cheese.
-                  </span>
-                  <div class="catalog__button">
-                    <button class="button">
-                      <span class="button-text"> buy by</span>
-                      <span class="button-price"> 68.99 USD. </span>
-                    </button>
-                    <button class="catalog__button-fav">
-                      <svg>
-                        <use xlink:href="images/sprite.svg#fav"></use>
-                      </svg>
-                    </button>
-                    <button class="catalog__button-cart">
-                      <svg>
-                        <use xlink:href="images/sprite.svg#bag"></use>
-                      </svg>
-                    </button>
-                  </div>
-                </article>
-              </li>
-              <li class="catalog__item">
-                <article class="catalog__box">
-                  <img
-                    class="catalog__img"
-                    src="images/cheese/cheese5.jpg"
-                    alt="Esrom"
-                    width="219"
-                    height="218"
-                  />
-                  <h3 class="catalog__name">Esrom</h3>
-                  <span class="catalog__info">
-                    It is a porous cheese, with many small holes
+                  <a class="catalog__link" href="#">
+                    <img
+                      class="catalog__img"
+                      src="images/cheese/cheese5.jpg"
+                      alt="Esrom"
+                      width="300"
+                      height="300"
+                    />
+                  </a>
+                  <h3 class="catalog__subtitle">Esrom</h3>
+                  <span class="catalog__info"
+                    >It is a porous cheese, with many small holes
                     throughout</span
                   >
-                  <div class="catalog__button">
-                    <button class="button">
-                      <span class="button-text"> buy by</span>
-                      <span class="button-price"> 48.99 USD. </span>
-                    </button>
-                    <button class="catalog__button-fav">
-                      <svg>
-                        <use xlink:href="images/sprite.svg#fav"></use>
-                      </svg>
-                    </button>
-                    <button class="catalog__button-cart">
-                      <svg>
-                        <use xlink:href="images/sprite.svg#bag"></use>
-                      </svg>
-                    </button>
+                  <div class="catalog__wrapper">
+                    <span class="catalog__button-price">
+                      52.99 <span>&#36;</span></span
+                    >
+
+                    <div class="catalog__buttons">
+                      <button class="catalog__button-fav" type="button">
+                        <span class="sr-only">Add to favourites </span>
+                        <svg>
+                          <use xlink:href="images/sprite.svg#fav"></use>
+                        </svg>
+                      </button>
+                      <button class="catalog__button-cart" type="button">
+                        <span class="sr-only"> Add to cart</span>
+                        <svg>
+                          <use xlink:href="images/sprite.svg#bag"></use>
+                        </svg>
+                      </button>
+                    </div>
                   </div>
                 </article>
               </li>
-
               <li class="catalog__item">
                 <article class="catalog__box">
-                  <img
-                    class="catalog__img"
-                    src="images/cheese/cheese6.jpg"
-                    alt="Saga"
-                    width="219"
-                    height="218"
-                  />
-                  <h3 class="catalog__name">Saga</h3>
+                  <a class="catalog__link" href="#">
+                    <img
+                      class="catalog__img"
+                      src="images/cheese/cheese6.jpg"
+                      alt="Saga"
+                      width="300"
+                      height="300"
+                    />
+                  </a>
+                  <h3 class="catalog__subtitle">Saga</h3>
                   <span class="catalog__info"
                     >A mix of blue cheese and brie, creamy, blue-veined cheese
                     with a white-mould rind.</span
                   >
-                  <div class="catalog__button">
-                    <button class="button">
-                      <span class="button-text"> buy by</span>
-                      <span class="button-price"> 188.99 USD. </span>
-                    </button>
-                    <button class="catalog__button-fav">
-                      <svg>
-                        <use xlink:href="images/sprite.svg#fav"></use>
-                      </svg>
-                    </button>
-                    <button class="catalog__button-cart">
-                      <svg>
-                        <use xlink:href="images/sprite.svg#bag"></use>
-                      </svg>
-                    </button>
+                  <div class="catalog__wrapper">
+                    <span class="catalog__button-price">
+                      97.99 <span>&#36;</span></span
+                    >
+
+                    <div class="catalog__buttons">
+                      <button class="catalog__button-fav" type="button">
+                        <span class="sr-only">Add to favourites </span>
+                        <svg>
+                          <use xlink:href="images/sprite.svg#fav"></use>
+                        </svg>
+                      </button>
+                      <button class="catalog__button-cart" type="button">
+                        <span class="sr-only"> Add to cart</span>
+                        <svg>
+                          <use xlink:href="images/sprite.svg#bag"></use>
+                        </svg>
+                      </button>
+                    </div>
                   </div>
                 </article>
               </li>
             </ul>
 
-            <button class="catalog__button-all">see all</button>
+            <button class="catalog__button-all button-animation">see all</button>
           </div>
         </section>
 
@@ -543,7 +615,7 @@
                   <img
                     class="tabs__content-img"
                     src="images/tabs-img/color.jpg"
-                    alt=""
+                    alt="What Different Wine Colors Mean?"
                   />
                   <div class="tabs__content-box">
                     <h3 class="tabs__content-title">
@@ -574,7 +646,7 @@
                   <img
                     class="tabs__content-img"
                     src="images/tabs-img/country.jpg"
-                    alt=""
+                    alt="What country has the best wine in the world?"
                   />
                   <div class="tabs__content-box">
                     <h3 class="tabs__content-title">
@@ -597,7 +669,7 @@
                   <img
                     class="tabs__content-img"
                     src="images/tabs-img/category.jpg"
-                    alt=""
+                    alt=" What types of sugars are in wine?"
                   />
                   <div class="tabs__content-box">
                     <h3 class="tabs__content-title">
@@ -619,7 +691,7 @@
                   <img
                     class="tabs__content-img"
                     src="images/tabs-img/variety.jpg"
-                    alt=""
+                    alt="Why wine is expensive?"
                   />
                   <div class="tabs__content-box">
                     <h3 class="tabs__content-title">Why wine is expensive?</h3>
@@ -639,7 +711,7 @@
                   <img
                     class="tabs__content-img"
                     src="images/tabs-img/price.jpg"
-                    alt=""
+                    alt=" How much is a volume of wine?"
                   />
                   <div class="tabs__content-box">
                     <h3 class="tabs__content-title">
@@ -662,7 +734,7 @@
                   <img
                     class="tabs__content-img"
                     src="images/tabs-img/volume.jpg"
-                    alt=""
+                    alt="What are producers of wine called?"
                   />
                   <div class="tabs__content-box">
                     <h3 class="tabs__content-title">
@@ -711,7 +783,8 @@
                   <img
                     class="blog__box-img"
                     src="images/blog-img/blog1.jpg"
-                    alt=""
+                    alt="Explore the wine color chart and understand what aspects
+                    of wine affect its color."
                     height="300"
                   />
                   <div class="blog__box-content">
@@ -734,7 +807,7 @@
                   <img
                     class="blog__box-img"
                     src="images/blog-img/blog2.jpg"
-                    alt=""
+                    alt="Drink Italy! All About Chianti Wine"
                     height="300"
                   />
                   <div class="blog__box-content">
@@ -756,7 +829,7 @@
                   <img
                     class="blog__box-img"
                     src="images/blog-img/blog3.jpg"
-                    alt=""
+                    alt="The Magic of Moscato d’Asti"
                     height="300"
                   />
                   <div class="blog__box-content">
@@ -775,8 +848,11 @@
           </div>
         </section>
 
-        <section class="section"></section>
+        <section class="section">
+          <div class="container"></div>
+        </section>
       </main>
+
       <footer class="footer">
         <div class="container">
           <ul class="footer__inner">

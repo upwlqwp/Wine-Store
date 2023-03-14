@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/main.min.css" />
+    <title>Wine & Food Store</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <nav class="nav">
+            <ul class="menu">
+              <li class="menu__list">
+                <a class="menu__link animation" href="index.html"> About us </a>
+              </li>
+              <li class="menu__list">
+                <a class="menu__link animation" href="catalog-page.html">
+                  Ctalog</a
+                >
+              </li>
+              <li class="menu__list">
+                <a class="menu__link animation" href="blog-page.html"> Blog </a>
+              </li>
+            </ul>
+            <a class="logo" href="#">
+              <img src="images/logo.svg" alt="logo" width="300" height="88" />
+            </a>
+            <ul class="info">
+              <li class="info__item">
+                <a class="info__link animation" href="#">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#user"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="info__item">
+                <a class="info__link animation" href="#">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#fav"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="info__item">
+                <a class="info__link basket basket--on animation" href="#">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#bag"></use>
+                  </svg>
+                  <!--<span >1</span>-->
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="section">
+          <div class="container">
+            <h1 class="invitation__info-title">
+              The next tasting is in November
+            </h1>
+            <div class="invitation">
+              <div class="invitation__info">
+                <p class="invitation__info-text">
+                  To participate in the tasting, please fill out the form. We
+                  conduct wine tastings from our assortment and not only.
+                  Professionally and informatively, for those who are not
+                  familiar with wine at all and those who have long connected
+                  their lives with it. Cost from 4000 rubles per person.
+                </p>
+                <span class="invitation__info-data"
+                  >To be held in Georgia, Tbilisi.
+                </span>
+                <span class="invitation__info-data">Date 04.11.2023</span>
+              </div>
+
+              <form
+                class="invitation__form"
+                action="#"
+                method="POST"
+                enctype="multipart/form-data"
+              >
+                <h3 class="invitation__subtitle">
+                  To participate in the tasting, please fill out the form.
+                </h3>
+                <label for="number">
+                  <input
+                    type="number"
+                    id="number"
+                    data-validate-field="number"
+                    placeholder="specify the number of guests"
+                    required
+                  />
+                </label>
+
+                <label for="name">
+                  <input
+                    type="text"
+                    id="name"
+                    data-validate-field="name"
+                    placeholder="your name"
+                    required
+                  />
+                </label>
+
+                <label for="tel">
+                  <input
+                    type="tel"
+                    id="tel"
+                    data-validate-field="tel"
+                    placeholder="your phone"
+                    required
+                  />
+                </label>
+
+                <label class="agree" for="agree">
+                  <input
+                    class="agree__input"
+                    type="checkbox"
+                    id="agree"
+                    required
+                  />
+                  <span class="agree__text">
+                    by clicking a button. i agree to the lerms of the privacy
+                    policy</span
+                  >
+                </label>
+
+                <button class="button-animation" type="submit">
+                  book a tasting
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container">
+            <ul class="topics">
+              <li class="topics__item">
+                <article>
+                  <h3 class="topics__item-title">
+                    Drink Italy! All About Chianti Wine
+                  </h3>
+                  <div class="topics__item-inner">
+                    <div class="topics__item-text">
+                      <p>
+                        A wine’s color can also help you if you’re interested in
+                        collecting wine. You can use wine color cues to
+                        determine its potential to cellar.
+                      </p>
+                      <p>
+                        Discover some of the world’s best sparkling wine in the
+                        Italian wine region of Valdobbiadene using Wine Folly’s
+                        Region Guide. Types of Wine Grapes Wine is made with
+                        grapes, but not typical table grapes you’ll find at the
+                        grocery. Wine grapes (latin name: Vitis vinifera) have
+                        thick skins, are small, sweet, and contain seeds. There
+                        are many different kinds of wine grapes–over a
+                        thousand,– but here some common choices you’ll find in
+                        the grocery store. Types of Wine Grapes Wine is
+                      </p>
+                    </div>
+                    <img
+                      class="topics__item-img"
+                      src="images/blog-img/blog1.jpg"
+                      alt="wine color image"
+                      width="600"
+                      height="400"
+                    />
+                  </div>
+                </article>
+              </li>
+              <li class="topics__item">
+                <article>
+                  <h3 class="topics__item-title">
+                    Drink Italy! All About Chianti Wine
+                  </h3>
+                  <div class="topics__item-inner">
+                    <img
+                      class="topics__item-img"
+                      src="images/blog-img/blog2.jpg"
+                      alt="wine color image"
+                      width="600"
+                      height="400"
+                    />
+                    <div class="topics__item-text">
+                      <p>
+                        A wine’s color can also help you if you’re interested in
+                        collecting wine. You can use wine color cues to
+                        determine its potential to cellar.
+                      </p>
+                      <p>
+                        Discover some of the world’s best sparkling wine in the
+                        Italian wine region of Valdobbiadene using Wine Folly’s
+                        Region Guide. Types of Wine Grapes Wine is made with
+                        grapes, but not typical table grapes you’ll find at the
+                        grocery. Wine grapes (latin name: Vitis vinifera) have
+                        thick skins, are small, sweet, and contain seeds. There
+                        are many different kinds of wine grapes–over a
+                        thousand,– but here some common choices you’ll find in
+                        the grocery store. Types of Wine Grapes Wine is
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </li>
+
+              <li class="topics__item">
+                <article>
+                  <h3 class="topics__item-title">
+                    The Magic of Moscato d’Asti
+                  </h3>
+                  <div class="topics__item-inner">
+                    <div class="topics__item-text">
+                      <p>
+                        It’s hard not to fall in love with Moscato d’Asti. This
+                        perfumed, sweet Italian white wine has captivated wine
+                        drinkers of all kinds.
+                      </p>
+                      <p>
+                        Discover some of the world’s best sparkling wine in the
+                        Italian wine region of Valdobbiadene using Wine Folly’s
+                        Region Guide. Types of Wine Grapes Wine is made with
+                        grapes, but not typical table grapes you’ll find at the
+                        grocery. Wine grapes (latin name: Vitis vinifera) have
+                        thick skins, are small, sweet, and contain seeds. There
+                        are many different kinds of wine grapes–over a
+                        thousand,– but here some common choices you’ll find in
+                        the grocery store. Types of Wine Grapes Wine is
+                      </p>
+                    </div>
+                    <img
+                      class="topics__item-img"
+                      src="images/blog-img/blog3.jpg"
+                      alt="wine color image"
+                      width="600"
+                      height="400"
+                    />
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <ul class="footer__inner">
+            <li class="footer__item">
+              <article class="company">
+                <h4 class="footer-title">Company</h4>
+                <ul class="footer__list">
+                  <li class="company__item">
+                    <a class="company__link" href="#">Shop</a>
+                  </li>
+                  <li class="company__item">
+                    <a class="company__link" href="#">Wine Data</a>
+                  </li>
+                  <li class="company__item">
+                    <a class="company__link" href="#">About Us </a>
+                  </li>
+                  <li class="company__item">
+                    <a class="company__link" href="#">Jobs </a>
+                  </li>
+                  <li class="company__item">
+                    <a class="company__link" href="#">Contact </a>
+                  </li>
+                </ul>
+              </article>
+            </li>
+            <li class="footer__item">
+              <article class="social">
+                <h4 class="footer-title">Social Media</h4>
+                <ul class="footer__list">
+                  <li class="social__item">
+                    <a class="social__link" href="#">Instagram</a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link" href="#">Youtube</a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link" href="#">Twitter</a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link" href="#">Facebook</a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link" href="#">LinkedIn</a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link" href="#">Pinterest </a>
+                  </li>
+                </ul>
+              </article>
+            </li>
+
+            <li class="footer__item">
+              <article class="region">
+                <h4 class="footer-title">Region Guides</h4>
+                <ul class="footer__list">
+                  <li class="region__item">
+                    <a class="region__link" href="#">Napa Valley</a>
+                  </li>
+                  <li class="region__item">
+                    <a class="region__link" href="#">Argentina</a>
+                  </li>
+                  <li class="region__item">
+                    <a class="region__link" href="#">Walla Walla</a>
+                  </li>
+                  <li class="region__item">
+                    <a class="region__link" href="#">Sicily</a>
+                  </li>
+                  <li class="region__item">
+                    <a class="region__link" href="#">Margaret River</a>
+                  </li>
+                  <li class="region__item">
+                    <a class="region__link" href="#">Valdobbiadene</a>
+                  </li>
+                  <li class="region__item">
+                    <a class="region__link" href="#">Paso Robles</a>
+                  </li>
+                </ul>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

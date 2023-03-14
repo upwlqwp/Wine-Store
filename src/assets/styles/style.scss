@@ -1,9 +1,10 @@
 @import "reset";
 @import "global";
+@import "blog-page";
+@import "catalog-page";
 @import "fonts";
 @import "mixins";
 @import "media";
-
 
 .nav {
   display: grid;
@@ -60,14 +61,12 @@
 }
 
 .top {
- 
   height: calc(100vh - 90px);
   background-image: url("../images/bg-images/header-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 33;
   position: relative;
-
 
   &::after {
     content: "";
@@ -82,7 +81,7 @@
 }
 
 .title {
-  font-family: 'BebasNeue';
+  font-family: "BebasNeue";
   padding-top: 200px;
   margin-bottom: 30px;
   font-size: 48px;
@@ -115,9 +114,9 @@
   &-text {
     display: block;
     padding: 13px 20px;
-    transition: color 0.6s,  background-color 0.6s;
+    transition: color 0.6s, background-color 0.6s;
 
-    &:hover{
+    &:hover {
       color: #780000;
       background-color: #fffffc;
     }
@@ -129,9 +128,9 @@
     padding: 13px 20px;
     display: block;
     background-color: #fffffc;
-    transition: color 0.6s,  background-color 0.6s;
+    transition: color 0.6s, background-color 0.6s;
 
-    &:hover{
+    &:hover {
       color: #fffffc;
       background-color: #780000;
     }
@@ -139,7 +138,6 @@
 }
 
 //----
-
 
 .tabs {
   display: grid;
@@ -205,12 +203,12 @@
     gap: 30px;
   }
 
-   &__box-content {
+  &__box-content {
     display: grid;
     gap: 20px;
     padding: 0 20px;
   }
- 
+
   &__box-img {
     display: block;
     margin-bottom: 20px;
@@ -263,7 +261,7 @@
   &__title {
     font-size: 40px;
     font-weight: 700;
-    font-family: 'BebasNeue';
+    font-family: "BebasNeue";
     text-transform: uppercase;
     line-height: 40px;
     letter-spacing: 2px;
@@ -319,114 +317,6 @@
   }
 }
 
-.catalog {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  margin-bottom: 50px;
-
-  &__item{
-    max-width: 500px;
-  }
-
- &__box{
-  display: flex;
-  flex-direction: column;
-  padding: 0 0 18px;
-  height: 100%;
-  max-width: 500px;
-  border: 1px solid rgba(17, 17, 17, 0.2);
-
- }
-
-  &__name {
-    text-transform: uppercase;
-    margin: 12px 0;
-    font-size: 23px;
-    letter-spacing: 1px;
-  }
-
-  &__img {
-    width: 100%;
-  }
-  &__info {
-    display: block;
-    font-size: 16px;
-    margin-bottom: 13px;
-    @include line-clamp(2);
-  }
-
-  &__button {
-    display: flex;
-    align-items: center;
-  }
-
-  &__button-price {
-    border-radius: 3px;
-    font-size: 20px;
-    font-weight: 500;
-    padding: 10px 20px;
-    color: #780000;
-    background-color: #fffffc;
-    display: block;
-    margin-right: 30px;
-  }
-
-  &__button-fav,
-  &__button-cart {
-    padding: 10px;
-    background-color: #490202;
-    border-radius: 50%;
-    margin-right: 13px;
-    display: flex;
-    justify-content: center;
-    border: 1px solid transparent;
-    transition:background-color 0.6s, fill 0.6s, border-color 0.4s, opacity 0.4s;
-
-    svg {
-      height: 25px;
-      width: 30px;
-      fill: #fffffc;
-    }
-
-    &:hover{
-background-color: #fffffc;
-
-svg{
-  fill: #780000;
-}
-    }
-
-    &:focus {
-      opacity: 0.8;
-      border-color: #fffffc;
-
-      svg {
-        opacity: 0.8;
-      }
-    }
-  }
-
-  &__button-all {
-    display: block;
-    margin: 0 auto;
-    border-radius: 3px;
-    font-size: 20px;
-    text-transform: uppercase;
-    padding: 8px 35px;
-    background-color: #780000;
-    transition: color 0.6s,  background-color 0.6s;
-
-  
-
-    &:hover{
-      color: #780000;
-      background-color: #fffefe;
-    }
-
-  }
-}
-
 .footer {
   padding: 70px 0;
 
@@ -452,16 +342,5 @@ svg{
     flex-direction: column;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 @import "media";

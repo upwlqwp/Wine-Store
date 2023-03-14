@@ -9,6 +9,15 @@ body {
   position: relative;
 }
 
+.sr-only{
+  height: 1px ;
+	margin: -1px ;
+	overflow: hidden ;
+	position: absolute ;
+	width: 1px ;
+	white-space: nowrap ; 
+}
+
 .wrapper {
   min-height: 100%;
   display: flex;
@@ -21,6 +30,7 @@ body {
 }
 
 .section {
+
   padding: 40px 0;
 
   &-title {
@@ -76,5 +86,20 @@ body {
     &:hover {
       fill: #780000;
     }
+  }
+}
+
+.button-animation{
+  &:hover {
+    color: #780000;
+    background-color: #fffefe;
+  }
+
+  &:focus{
+    border-color: #fffefe;
+  }
+
+  &:active{
+    box-shadow: 4px 4px 0 0 #780000;
   }
 }
